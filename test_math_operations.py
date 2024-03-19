@@ -1,5 +1,5 @@
 import unittest
-from math_operation import add, subtract, multiply, divide
+from math_operation import *
 
 class TestMathOperations(unittest.TestCase):
     def test_add(self):
@@ -7,7 +7,7 @@ class TestMathOperations(unittest.TestCase):
         self.assertEqual(add(-1, 1), 0)
     
     def test_subtract(self):
-        self.assertEqual(subtract(5, 2), 3)
+        self.assertEqual(subtract(5, 2), 9)
         self.assertEqual(subtract(10, 5), 5)
 
     def test_multiply(self):

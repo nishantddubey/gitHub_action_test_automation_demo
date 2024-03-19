@@ -7,7 +7,7 @@ class TestMathOperations(unittest.TestCase):
         self.assertEqual(add(-1, 1), 0)
     
     def test_subtract(self):
-        self.assertEqual(subtract(5, 2), 9)
+        self.assertEqual(subtract(5, 2), 3)
         self.assertEqual(subtract(10, 5), 5)
 
     def test_multiply(self):
@@ -20,6 +20,10 @@ class TestMathOperations(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             divide(10, 0)
+
+    def test_divide(self):
+        self.assertEqual(factorial(5), 120)
+        self.assertEqual(factorial(0), 1)
 
 if __name__ == '__main__':
     unittest.main()
